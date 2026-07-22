@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Intergalactic Attack of the Martians</title>
+<link rel="stylesheet" href="style1234.css">
+</head>
+<body>
+
+<!-- MENU -->
+<div id="menu" class="screen">
+    <h1>The Intergalactic Attack of the Martians</h1>
+
+    <button id="playBtn">Play</button>
+    <button id="settingsBtn">Settings</button>
+
+    <div id="settingsPanel">
+        <label>
+            Difficulty
+            <select id="difficulty">
+                <option value="4">Easy</option>
+                <option value="6" selected>Normal</option>
+                <option value="9">Hard</option>
+            </select>
+        </label>
+        <label2>
+            Volume
+            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+            </label2>
+    </div>
+</div>
+
+<!-- GAME -->
+<div id="gameScreen" class="hidden">
+
+    <div id="score">0</div>
+
+    <div id="gameArea">
+        <div id="player"></div>
+    </div>
+
+</div>
+
+<!-- GAME OVER -->
+<div id="gameOver" class="screen hidden">
+    <h1>Game Over</h1>
+
+    <h2 id="finalScore"></h2>
+
+    <button id="restartBtn">Play Again</button>
+</div>
+
+<script src="script1234.js"></script>
+</body>
+</html>
