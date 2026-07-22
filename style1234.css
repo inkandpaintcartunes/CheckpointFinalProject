@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+    overflow:hidden;
+}
+
+.screen{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+button{
+    padding:15px 40px;
+    font-size:20px;
+    cursor:pointer;
+    border:none;
+    border-radius:8px;
+    background:#00b4ff;
+    color:white;
+}
+
+button:hover{
+    background:#0090cc;
+}
+
+#settingsPanel{
+    margin-top:10px;
+}
+
+#gameArea{
+    width:400px;
+    height:700px;
+    background:#222;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+    border:5px solid white;
+}
+
+#player{
+   width:50px;
+    height:50px;
+    position:absolute;
+    bottom:20px;
+    left:175px;
+
+    background-image:url("https://static.vecteezy.com/system/resources/thumbnails/043/287/921/small/futuristic-spaceship-isolated-transparent-background-png.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.enemy{
+    width:50px;
+    height:50px;
+    background:red;
+    position:absolute;
+    border-radius:8px;
+}
+
+#score{
+    position:absolute;
+    top:20px;
+    left:20px;
+    font-size:28px;
+    font-weight:bold;
+}
